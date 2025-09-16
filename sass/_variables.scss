@@ -1,0 +1,55 @@
+
+//variables 
+
+    //colors
+		$primary-color:#0d1c47 !default;
+		$secondary-color: #00B4D8 !default;
+		$error-color: #FF6B6B !default;
+		$info-color: rgb(255, 255, 139) !default ;
+		
+		$colors: (
+				"primary": $primary-color,
+				"secondary": $secondary-color,
+				"error": $error-color,
+				"info": $info-color,
+				"blue": blue,
+				"red": red,
+				"yellow": yellow,
+				"green": green,
+				"orange": orange,
+				"purple": purple,
+				"gray": gray,
+				"black": black,
+				"white": white,
+				"mint": #aee6cf,
+				"lavender": #d9c9f2,
+				"charcoal": #333333,
+				"dark-grey": #666,
+				"medium-grey": #ddd,
+				"light-grey": #f1f1f1,
+				"white-1": #fff,
+				"white-2": #f5f5f5,
+		);
+		
+		//spacing
+		$base-padding: 0.75rem !default;
+		$base-margin: 0.75rem !default;
+		
+		//borders
+		$base-border-thickness: 1px !default;
+		$base-border-radius: 20px !default;
+		
+		
+		//box-shadow
+		$base-box-shadow: 1px 3px 5px rgba(5, 0, 0, 0.1) !default;
+		
+		//font size
+		$base-font-size: 1em;
+		$font-size-sm: $base-font-size * 0.75 !default;
+		$font-size-lg: $base-font-size * 1.5 !default;
+		$font-size-xl: $base-font-size * 2 !default;
+		$font-size-xxl: $base-font-size * 3 !default;
+		
+		//font-family
+		$base-font: 'Manrope', sans-serif !default;
+		

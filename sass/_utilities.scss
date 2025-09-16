@@ -1,4 +1,6 @@
 @use 'sass:math';
+@use "sass:map";
+@use 'variables' as *;
 
 //map of utility styles
 $utilities: (
@@ -144,8 +146,8 @@ $utilities: (
 		"values": (
 			"default": $base-border-radius,
 			"non": 0,
-			"xs": ($base-border-radius / 4),
-			"xm": ($base-border-radius / 2),
+			"xs": math.div($base-border-radius, 4),
+			"xm": math.div($base-border-radius, 2),
 			"lg": ($base-border-radius * 2),
 			"full": 50%
 		),
@@ -163,7 +165,7 @@ $utilities: (
 	),
 
 	"font-size": (
-		"prefeix": "font",
+		"prefix": "font",
 		"values":(
 			"sm": $font-size-sm,
 			"md": $base-font-size,
@@ -176,8 +178,8 @@ $utilities: (
 
 //generate utility calss
 @each $property, $map in $utilities {
-	$prefix: map-get($map, "prefix");
-	$values: map-get($map, "values");
+	$prefix: map.get($map, "prefix");
+	$values: map.get($map, "values");
 
 	@each $key, $val in $values {
 		@if($key == "default") {

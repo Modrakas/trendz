@@ -164,6 +164,17 @@ $utilities: (
 		),
 	),
 
+	"position": (
+		"prefix": "position",
+		"values": (
+			"a": absolute,
+			"f": fixed,
+			"r": relative,
+			"stc": static,
+			"sky": sticky,
+		),
+	),
+
 	"font-size": (
 		"prefix": "font",
 		"values":(

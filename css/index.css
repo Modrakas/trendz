@@ -43,6 +43,15 @@ img {
   flex-flow: row wrap;
 }
 
+.gap-2 > * {
+  padding: 20px;
+}
+
+.gap-2 {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -67,6 +76,10 @@ img {
   color: gray;
 }
 
+.text-gray-light-9 {
+  color: rgb(242.3, 242.3, 242.3);
+}
+
 .bg-gray-light-9 {
   background-color: rgb(242.3, 242.3, 242.3);
 }
@@ -77,6 +90,35 @@ img {
 
 .bg-white {
   background-color: white;
+}
+
+.card {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid #00B4D8;
+  background: #00B4D8;
+  box-shadow: 1px 3px 5px rgba(5, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 20em;
+}
+.card .card-title {
+  font-size: 1em;
+  padding-bottom: 0.75rem;
+  font-weight: bold;
+  color: white;
+}
+
+.card {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid #00B4D8;
+  box-shadow: 1px 3px 5px rgba(5, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.card .card-title {
+  font-size: 1em;
+  padding-bottom: 0.75rem;
+  font-weight: bold;
 }
 
 .btn-secondary {
@@ -105,12 +147,28 @@ img {
   box-shadow: 1px 3px 5px rgba(5, 0, 0, 0.1);
 }
 
+.p-0 {
+  padding: 0;
+}
+
+.pt-4 {
+  padding-top: 4.5rem;
+}
+
 .pt-5 {
   padding-top: 6rem;
 }
 
+.pb-4 {
+  padding-bottom: 4.5rem;
+}
+
 .pb-5 {
   padding-bottom: 6rem;
+}
+
+.m-1 {
+  margin: 0.75rem;
 }
 
 .ml-1 {
@@ -121,8 +179,16 @@ img {
   margin-left: 1.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.75rem;
+}
+
 .mt-2 {
   margin-top: 1.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-3 {

@@ -6,13 +6,16 @@
   display: block;
   padding: $base-padding;
   border: $base-border-thickness solid $secondary-color;
+  background: $secondary-color;
   box-shadow: $base-box-shadow;
   border-radius: math.div($base-border-radius, 4);
+  width: 20em;
 
   .card-title {
     font-size: $base-font-size;
     padding-bottom: $base-padding;
     font-weight: bold;
+    color: white;
   }
 
   .card-body {
@@ -20,7 +23,7 @@
     font-size: $base-font-size;
 
     a {
-      color: black;
+      color: white;
       text-decoration: underline;
     }
 

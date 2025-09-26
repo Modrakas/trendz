@@ -1,0 +1,65 @@
+//math equations in sass
+@use 'sass:math';
+@use 'variables' as *;
+ 
+ .card {
+  display: block;
+  padding: $base-padding;
+  border: $base-border-thickness solid $secondary-color;
+  box-shadow: $base-box-shadow;
+  border-radius: math.div($base-border-radius, 4);
+
+  .card-title {
+    font-size: $base-font-size;
+    padding-bottom: $base-padding;
+    font-weight: bold;
+  }
+
+  .card-body {
+    color: cadetblue;
+    font-size: $base-font-size;
+
+    a {
+      color: black;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: $secondary-color;
+    }
+  }
+}
+
+//@debug alows you to see the value of your math.div equation. value appears in terminal/console
+@debug math.div($base-border-radius, 4);
+ 
+ .card {
+  display: block;
+  padding: $base-padding;
+  border: $base-border-thickness solid $secondary-color;
+  box-shadow: $base-box-shadow;
+  border-radius: math.div($base-border-radius, 4);
+
+  .card-title {
+    font-size: $base-font-size;
+    padding-bottom: $base-padding;
+    font-weight: bold;
+  }
+
+  .card-body {
+    color: cadetblue;
+    font-size: $base-font-size;
+
+    a {
+      color: black;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: $secondary-color;
+    }
+  }
+}
+
+//@debug alows you to see the value of your math.div equation. value appears in terminal/console
+@debug math.div($base-border-radius, 4);
